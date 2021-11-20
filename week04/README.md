@@ -20,7 +20,11 @@ Contrary to mutable objects, immutable objects' values cannot be changed (state 
 * `tuple`
 * `NoneType`
 
+<details>
+
+<summary>Fun fact (not examinable)</summary>
 There is only one copy of `True`, `False` and `None` each.
+    
 ```py
 x = True
 y = True
@@ -41,6 +45,7 @@ print(id(x), id(y), id(z), sep='\n')
 
 Notice all three `True`s have the same address, and all `x`, `y`, `z` are referencing the same `True`. The same applies to `False` and `None` (of `NoneType`) as well.
 
+</details>
 
 ***
 
