@@ -7,11 +7,11 @@ Topics covered:
 ## Mutability
 Contrary to mutable objects, immutable objects' values cannot be changed (state mutation) once created.
 
-### Immutable objects
+### Mutable objects
 * `list`
 * `dict`
 
-### Mutable objects
+### Immutable objects
 * `int`
 * `float`
 * `bool`
