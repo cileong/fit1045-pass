@@ -145,10 +145,8 @@ def sum(lst):
     return total
 ```
 
-Can you do it **recursively**?
-
 <details>
-<summary>Solution</summary>
+<summary>Implement it recursively.</summary>
 
 ```py
 def sum(lst):
@@ -160,10 +158,8 @@ def sum(lst):
 
 Note that this solution does not compute the sum in `O(N)` time, where `N == len(lst)`.
 
-Can you compute the time complexity of this solution?
-
 <details>
-<summary>Time complexity</summary>
+<summary>Compute the Big-O time complexity of this solution.</summary>
 
 `O(N^2)`, where `N == len(lst)`.
 
