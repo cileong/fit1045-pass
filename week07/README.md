@@ -70,6 +70,62 @@ def factorial(n):
 
 ### Exercises
 
+The `n`th term of the Fibonacci sequence is given as follows:
+
+![equation](https://latex.codecogs.com/png.latex?%5Cbg_white%20F_n%20%3D%20%5Cbegin%7Bcases%7D%200%20%26%20%5Ctext%7B%2C%20if%20n%20%3D%201%2C%7D%20%5C%5C%201%20%26%20%5Ctext%7B%2C%20if%20n%20%3D%202%2C%7D%20%5C%5C%20F_%7Bn-1%7D%20&plus;%20F_%7Bn-2%7D%20%26%20%5Ctext%7B%2C%20otherwise.%7D%20%5Cend%7Bcases%7D)
+
+<details>
+<summary>Identify the base case.</summary>
+
+When `n` is 1 or 2.
+
+</details>
+
+<details>
+<summary>Implement the function recursively.
+</summary>
+
+```py
+def fibonacci(n):
+    if n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+```
+
+<details>
+<summary>Identify the Big-O time complexity of the above implementation.</summary>
+
+`O(2^N)`, where `N` is the input `n`.
+</details>
+</details>
+
+<details>
+<summary>Implement the function iteratively.</summary>
+
+You see here, this function is easier to reason about **recursively**, isn't it?
+
+There are functions better implemented iteratively. Conversely, there are also functions better implemented recursively. Know your tools!
+
+```py
+def fibonacci(n):
+    a = 0, b = 1
+    for _ in range(n-1):
+        a, b = b, a+b
+    return a
+```
+
+<details>
+<summary>Identify the Big-O time complexity of this implementation.</summary>
+
+`O(N)`, where `N` is the input `n`.
+</details>
+</details>
+
+***
+
 Implement a function `sum(lst)` that returns the sum of the numeric elements in the list `lst` **recursively**.
 
 ```
