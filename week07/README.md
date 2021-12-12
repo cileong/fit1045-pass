@@ -10,7 +10,7 @@ Topics covered:
 ## Recursion
 
 * Another loop structure aside from the iterative method (while, for-loops).
-* A recursive function is defined in terms of itself, see [here](#computing-n!).
+* A recursive function is defined in terms of itself, see [here](#computing-n).
 * Strategy: break a problem into smaller instances, find the solutions to these subproblems, then use them to build up to the solution to the entire problem.
 
 
