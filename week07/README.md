@@ -29,4 +29,4 @@ n! = n x (n-1)!
 
 Let's convert it to a more math-y definition:
 
-![equation](https://latex.codecogs.com/svg.latex?%5Cbg_white%20n%21%20%3D%20%5Cbegin%7Bcases%7D%201%20%26%20%5Ctext%7B%2C%20if%20n%20%3D%200%20or%20n%20%3D%201%2C%7D%20%5C%5C%20n%20%5Ccdot%20%28n-1%29%21%20%26%20%5Ctext%7B%2C%20otherwise.%7D%20%5Cend%7Bcases%7D)
+![equation](https://latex.codecogs.com/png.latex?%5Cbg_white%20n%21%20%3D%20%5Cbegin%7Bcases%7D%201%20%26%20%5Ctext%7B%2C%20if%20n%20%3D%200%20or%20n%20%3D%201%2C%7D%20%5C%5C%20n%20%5Ccdot%20%28n-1%29%21%20%26%20%5Ctext%7B%2C%20otherwise.%7D%20%5Cend%7Bcases%7D)
