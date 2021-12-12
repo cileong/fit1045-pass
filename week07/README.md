@@ -66,3 +66,55 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 ```
+
+
+### Exercises
+
+Implement a function `sum(lst)` that returns the sum of the numeric elements in the list `lst` **recursively**.
+
+```
+>>> sum([1, 2, 3, 4, 5])
+15
+>>> sum(list(range(1, 101)))
+5050
+```
+
+Here is how the function would be implemented **iteratively**.
+
+```py
+def sum(lst):
+    total = 0
+    for element in lst:
+        total += element
+    return total
+```
+
+Can you do it **recursively**?
+
+<details>
+<summary>Solution</summary>
+
+```py
+def sum(lst):
+    if lst == []:
+        return 0
+    else:
+        return lst[0] + sum(lst[1:])
+```
+
+Note that this solution does not compute the sum in `O(N)` time, where `N == len(lst)`.
+
+Can you compute the time complexity of this solution?
+
+<details>
+<summary>Time complexity</summary>
+
+`O(N^2)`, where `N == len(lst)`.
+
+The function will be called `N` times, on each call, a slice of size `N-1` (`N` here refers to the `len(lst)` of the current call) will be created.
+
+So, in total, the length of the slices created is `(N-1) + (N-2) + ... + 1`, which is an A.P. series. The steps taken is in `O(N^2)`.
+
+Can you propose a `O(N)` time **recursive** solution?
+</details>
+</details>
