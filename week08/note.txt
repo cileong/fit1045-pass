@@ -1,0 +1,8 @@
+BFS
+- reachability
+- find shortest distance between two vertices
+
+DFS
+- reachability
+- inorder traversal
+- cycle detection (usually DFS, can be done BFS as well)
