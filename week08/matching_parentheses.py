@@ -8,7 +8,10 @@ def matching_parentheses(s: str) -> bool:
         elif char == ')':
             if stack.is_empty() or not stack.pop() == '(':
                 return False
-    return True
+            
+    # If the stack is not empty,
+    # that means there are some unmatched opening parentheses
+    return stack.is_empty()
 
 if __name__ == '__main__':
     s = '()()(())())'
